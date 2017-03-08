@@ -12,3 +12,44 @@ body{
   background-color: #F0F0F0;
   color: #2A2A2A;
 }
+
+a{
+  text-decoration: none;
+  outline: none;
+  display: inline-block;
+  margin: 0 10px;
+  color: #2C95CA;
+  transition: color 0.3s ease-in-out;
+
+  &:hover{
+    color: #267FAC;
+  }
+
+  &.active{
+    color: #AC7026;
+    border: 1px solid #AC7026
+  }
+
+}
+
+.navigation{
+
+  width: 500px;
+  margin: 20px auto;
+  max-width: 80%;
+  text-align: center;
+
+  .link-to{
+    border: 1px solid #646464;
+    padding: 10px 20px;
+    background-color: #F0F0F0;
+    border-radius: 4px;
+    transition: background-color 0.3s ease-in-out;
+
+    &:hover{
+      background-color: #E1E1E1;
+    }
+
+  }
+
+}

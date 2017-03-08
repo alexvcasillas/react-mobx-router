@@ -1,0 +1,43 @@
+#user{
+  width: 500px;
+  margin: 0 auto;
+  max-width: 80%;
+
+  .info{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    flex-flow: center;
+
+    .name{
+      align-self: flex-start;
+      width: 50%;
+    }
+
+    .xp{
+      align-self: flex-end;
+      width: 50%;
+      text-align: right;
+    }
+
+  }
+
+
+
+  .actions{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-top: 20px;
+
+    button{
+      text-transform: uppercase;
+      font-size: 11px;
+      padding: 5px 10px;
+    }
+
+  }
+
+}

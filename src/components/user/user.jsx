@@ -29,14 +29,18 @@ class User extends Component {
   render() {
     const { fullName, name, lastName, age, xp } = this.props.user;
     return (
-      <div id="AppComponent">
-        <div>User: {fullName}</div>
-        <div>XP: {xp}</div>
-        <button onClick={this.increaseXp}>Increase Experience Points!</button>
-        <button onClick={this.changeName}>Change My Name!</button>
-        <button onClick={this.changeLastName}>
-          Change My Last name!
-        </button>
+      <div id="user">
+        <div className="info">
+          <div className="name">User: {fullName}</div>
+          <div className="xp">XP: {xp}</div>
+        </div>
+        <div className="actions">
+          <button onClick={this.increaseXp}>Increase Experience Points!</button>
+          <button onClick={this.changeName}>Change My Name!</button>
+          <button onClick={this.changeLastName}>
+            Change My Last name!
+          </button>
+        </div>
       </div>
     );
   }

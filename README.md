@@ -4,6 +4,8 @@
 
 ### React Create App with React Router and MobX and Internationalization
 
+AKA: **3RMXi** (for the sake of brevity!)
+
 ❕❕ **New:** Now supports Internationalization!
 
 This project is a personal boilerplate as a quickstart for development with [react-create-app](https://github.com/facebookincubator/create-react-app) + [react-router](https://github.com/ReactTraining/react-router) and [MobX](https://github.com/mobxjs/mobx) to maintain the state of the App.

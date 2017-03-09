@@ -13,15 +13,15 @@ export default class UserStore {
     this.xp = xp;
   }
 
-  @action changeName(name){
+  @action('Change Name') changeName(name){
     this.name = name;
   }
 
-  @action changeLastName(lastName){
+  @action('Change Last Name') changeLastName(lastName){
     this.lastName = lastName;
   }
 
-  @action increaseXp(amount){
+  @action('Increase XP') increaseXp(amount){
     this.xp += amount;
   }
 

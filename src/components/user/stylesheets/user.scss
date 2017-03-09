@@ -1,7 +1,8 @@
 #user{
-  width: 500px;
+  width: 600px;
   margin: 0 auto;
   max-width: 80%;
+  margin-top: 40px;
 
   .info{
     display: flex;
@@ -23,21 +24,11 @@
 
   }
 
-
-
-  .actions{
-    width: 100%;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    margin-top: 20px;
-
-    button{
-      text-transform: uppercase;
-      font-size: 11px;
-      padding: 5px 10px;
-    }
-
+  button{
+    text-transform: uppercase !important;
+    font-size: 11px !important;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 
 }

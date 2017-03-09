@@ -8,7 +8,6 @@ import { Provider } from 'mobx-react';
 // Import Components
 import App from './containers/app';
 import User from './components/user/user';
-import Realm from './components/realm/realm';
 
 // Enable MobX Strict Functionality
 mobx.useStrict(true);
@@ -21,11 +20,14 @@ const history = syncHistoryWithStore(browserHistory, routingStore);
 
 // Import our Stores Here
 import UserStore from './stores/user';
+import LanguageStore from './stores/language';
 // Because they're classes, we have to instantiate them here :)
 const userStore = new UserStore('Alex', 'Casillas', 26, 0);
+const languageStore = new LanguageStore('en');
 
 const store = {
   user: userStore,
+  language: languageStore,
   routes: routingStore
 }
 
@@ -34,7 +36,6 @@ const router = (
     <Router history={history}>
       <Route path="/" component={App}>
         <IndexRoute component={User} />
-        <Route path="/realms" component={Realm} />
       </Route>
     </Router>
   </Provider>

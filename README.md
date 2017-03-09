@@ -1,4 +1,7 @@
 # react-mobx-router
+
+![3RMXi Logotype](https://raw.githubusercontent.com/alexvcasillas/react-mobx-router/master/3RMXi.jpg)
+
 ### React Create App with React Router and MobX and Internationalization
 
 ❕❕ **New:** Now supports Internationalization!

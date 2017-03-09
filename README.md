@@ -92,9 +92,9 @@ Now, to change the current App Language you only need to call (previously inject
 
 **Pending Internationalization Tasks:**
 
-🔳 Expose the current language value to check it at any point/state of the App.
+✅ Expose the current language value to check it at any point/state of the App.
 
-🔲 Automatize the language resources fetch.
+⬜ Automatize the language resources fetch.
 
 ---
 

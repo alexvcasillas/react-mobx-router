@@ -8,9 +8,12 @@ import { observer, inject } from 'mobx-react';
 class Language extends React.Component {
   render() {
     const { language, resource } = this.props;
+    const isNestedResource = resource.indexOf('.') !== -1;
     return (
       <span>
-        {language.resource[resource]}
+        {isNestedResource
+          ? language.resource[resource.split('.')[0]][resource.split('.')[1]]
+          : language.resource[resource]}
       </span>
     );
   }

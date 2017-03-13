@@ -6,9 +6,11 @@ const RESOURCES = {
   XP_TITLE: 'Experiencia',
   AGE_TITLE: 'Age',
   APP_DESCRIPTION: 'React Create App con React Router y MobX e Internacionalización.',
-  INCREASE_XP: 'Incrementa Puntos de Experiencia!',
-  CHANGE_NAME: 'Cambia mi nombre!',
-  CHANGE_LASTNAME: 'Cambia mi apellido!'
-}
+  ACTIONS: {
+    INCREASE_XP: 'Incrementa Puntos de Experiencia!',
+    CHANGE_NAME: 'Cambia mi nombre!',
+    CHANGE_LASTNAME: 'Cambia mi apellido!'
+  }
+};
 
 export default RESOURCES;

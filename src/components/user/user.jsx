@@ -21,11 +21,11 @@ class User extends Component {
   }
 
   changeName() {
-    this.props.user.changeName('Paquito');
+    this.props.user.changeName('John');
   }
 
   changeLastName() {
-    this.props.user.changeLastName('Perita');
+    this.props.user.changeLastName('Doe');
   }
 
   render() {
@@ -48,19 +48,19 @@ class User extends Component {
                 className="d-block btn btn-primary"
                 onClick={this.increaseXp}
               >
-                <Language resource="INCREASE_XP" />
+                <Language resource="ACTIONS.INCREASE_XP" />
               </button>
               <button
                 className="d-block btn btn-secondary"
                 onClick={this.changeName}
               >
-                <Language resource="CHANGE_NAME" />
+                <Language resource="ACTIONS.CHANGE_NAME" />
               </button>
               <button
                 className="d-block btn btn-secondary"
                 onClick={this.changeLastName}
               >
-                <Language resource="CHANGE_LASTNAME" />
+                <Language resource="ACTIONS.CHANGE_LASTNAME" />
               </button>
             </div>
           </div>

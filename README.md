@@ -7,6 +7,7 @@
 AKA: **3RMXi** (for the sake of brevity!)
 
 ❕❕ **New:** Now supports Internationalization!
+
 ❕❕ **New:** i18n now supports nested language resource objects for a better structuring!
 
 This project is a personal boilerplate as a quickstart for development with [react-create-app](https://github.com/facebookincubator/create-react-app) + [react-router](https://github.com/ReactTraining/react-router) and [MobX](https://github.com/mobxjs/mobx) to maintain the state of the App.

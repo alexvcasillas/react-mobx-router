@@ -1,22 +1,18 @@
 import React from 'react';
 import { render } from 'react-dom';
-import { Router, Route, IndexRoute, browserHistory } from 'react-router';
-import { RouterStore, syncHistoryWithStore } from 'mobx-react-router';
+import {
+  BrowserRouter as Router,
+  Route,
+  browserHistory
+} from 'react-router-dom';
 import mobx from 'mobx';
 import { Provider } from 'mobx-react';
 
 // Import Components
 import App from './containers/app';
-import User from './components/user/user';
 
 // Enable MobX Strict Functionality
 mobx.useStrict(true);
-
-// Routing to store in MobX
-const routingStore = new RouterStore();
-
-// Create a Custom History Object
-const history = syncHistoryWithStore(browserHistory, routingStore);
 
 // Import our Stores Here
 import UserStore from './stores/user';
@@ -27,16 +23,13 @@ const languageStore = new LanguageStore('en');
 
 const store = {
   user: userStore,
-  language: languageStore,
-  routes: routingStore
-}
+  language: languageStore
+};
 
 const router = (
   <Provider {...store}>
-    <Router history={history}>
-      <Route path="/" component={App}>
-        <IndexRoute component={User} />
-      </Route>
+    <Router history={browserHistory}>
+      <Route exact path="/" component={App} />
     </Router>
   </Provider>
 );

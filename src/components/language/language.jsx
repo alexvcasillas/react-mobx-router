@@ -1,8 +1,6 @@
 import React, { PropTypes } from 'react';
 import { observer, inject } from 'mobx-react';
 
-// Import language resources
-
 @inject('language')
 @observer
 class Language extends React.Component {

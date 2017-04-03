@@ -3,6 +3,7 @@ import { observer, inject } from 'mobx-react';
 import DevTools from 'mobx-react-devtools';
 
 import Language from '../components/language/language';
+import User from '../components/user/user';
 
 // Import Common Stylesheets
 import '../stylesheets/common.scss';
@@ -15,7 +16,7 @@ export default class App extends React.Component {
   }
 
   render() {
-    const { language, children } = this.props;
+    const { language } = this.props;
     return (
       <div id="app">
         <DevTools />
@@ -34,7 +35,13 @@ export default class App extends React.Component {
           <a className="navbar-brand" href="#">react-mobx-router</a>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav mr-auto">
-              <li className={language.currentLanguage === 'es' ? 'nav-item active' : 'nav-item'}>
+              <li
+                className={
+                  language.currentLanguage === 'es'
+                    ? 'nav-item active'
+                    : 'nav-item'
+                }
+              >
                 <a
                   className="nav-link pointer"
                   onClick={this.changeLanguage.bind(this, 'es')}
@@ -42,7 +49,13 @@ export default class App extends React.Component {
                   <Language resource="CHANGE_SPANISH" />
                 </a>
               </li>
-              <li className={language.currentLanguage === 'en' ? 'nav-item active' : 'nav-item'}>
+              <li
+                className={
+                  language.currentLanguage === 'en'
+                    ? 'nav-item active'
+                    : 'nav-item'
+                }
+              >
                 <a
                   className="nav-link pointer"
                   onClick={this.changeLanguage.bind(this, 'en')}
@@ -53,7 +66,7 @@ export default class App extends React.Component {
             </ul>
           </div>
         </nav>
-        {children}
+        <User />
       </div>
     );
   }

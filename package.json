@@ -1,6 +1,6 @@
 {
   "name": "react-mobx-router",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "private": true,
   "devDependencies": {
     "custom-react-scripts": "0.0.23",

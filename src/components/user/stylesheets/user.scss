@@ -1,34 +1,51 @@
-#user{
+#user {
   width: 600px;
   margin: 0 auto;
   max-width: 80%;
-  margin-top: 40px;
+  margin-top: 80px;
+  background-color: #ffffff;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  padding: 20px;
 
-  .info{
+  .info {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: flex-start;
     flex-flow: center;
 
-    .name{
+    .name {
       align-self: flex-start;
       width: 50%;
     }
 
-    .xp{
+    .xp {
       align-self: flex-end;
       width: 50%;
       text-align: right;
     }
-
   }
 
-  button{
-    text-transform: uppercase !important;
-    font-size: 11px !important;
+  button {
+    text-transform: uppercase;
     margin-top: 10px;
     margin-bottom: 10px;
-  }
+    margin-right: 10px;
+    padding: 10px 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    background-color: #A8BBE8;
+    color: #ffffff;
+    border: 0;
+    outline: none;
+    cursor: pointer;
 
+    &:hover {
+      background-color: #7793D2;
+    }
+
+    &:active {
+      background-color: #A793D2;
+    }
+  }
 }

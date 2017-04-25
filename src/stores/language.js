@@ -1,4 +1,4 @@
-import { observable, computed, action, reaction } from 'mobx';
+import { observable, computed, action } from 'mobx';
 
 import esES from '../language/i18n/es';
 import enUS from '../language/i18n/en';
@@ -10,13 +10,10 @@ export default class LanguageStore {
     switch (this.language) {
       case 'en':
         return enUS;
-        break;
       case 'es':
         return esES;
-        break;
       default:
         return enUS;
-        break;
     }
   }
 

@@ -6,32 +6,8 @@ import Language from '../language/language';
 // Stylesheet Imports
 import './stylesheets/user.scss';
 
-@inject('user')
-@observer
-class User extends Component {
-  constructor(props) {
-    super(props);
-    this.increaseXp = this.increaseXp.bind(this);
-    this.changeName = this.changeName.bind(this);
-    this.changeLastName = this.changeLastName.bind(this);
-  }
-
-  increaseXp() {
-    this.props.user.increaseXp(100);
-  }
-
-  changeName() {
-    this.props.user.changeName('John');
-  }
-
-  changeLastName() {
-    this.props.user.changeLastName('Doe');
-  }
-
-  render() {
-    const { fullName, age, xp } = this.props.user;
-    return (
-      <div id="user">
+const User = ({user, fullName, age, xp}) => (
+  <div id="user">
         <div className="container">
           <div className="card">
             <div className="card-block">
@@ -46,19 +22,19 @@ class User extends Component {
               </p>
               <button
                 className="d-block btn btn-primary"
-                onClick={this.increaseXp}
+                onClick={() => user.increaseXp(100)}
               >
                 <Language resource="ACTIONS.INCREASE_XP" />
               </button>
               <button
                 className="d-block btn btn-secondary"
-                onClick={this.changeName}
+                onClick={() => user.changeName('John')}
               >
                 <Language resource="ACTIONS.CHANGE_NAME" />
               </button>
               <button
                 className="d-block btn btn-secondary"
-                onClick={this.changeLastName}
+                onClick={() => user.changeLastName('Doe')}
               >
                 <Language resource="ACTIONS.CHANGE_LASTNAME" />
               </button>
@@ -66,8 +42,6 @@ class User extends Component {
           </div>
         </div>
       </div>
-    );
-  }
-}
+)
 
-export default User;
+export default inject('user')(observer(User));

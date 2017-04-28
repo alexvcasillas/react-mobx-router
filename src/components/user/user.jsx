@@ -7,7 +7,7 @@ import Button from '../button/button';
 // Stylesheet Imports
 import './stylesheets/user.scss';
 
-const User = ({ user }) => (
+const User = ({ user, ui }) => (
   <div id="user">
     <div className="container">
       <div className="info">
@@ -28,18 +28,33 @@ const User = ({ user }) => (
         </div>
       </div>
       <div className="actions">
-        <Button onClick={() => user.increaseXp(100)}>
+        <Button radius={ui.borderRadius} onClick={() => user.increaseXp(100)}>
           <Language resource="ACTIONS.INCREASE_XP" />
         </Button>
-        <Button onClick={() => user.changeName('John')}>
+        <Button
+          radius={ui.borderRadius}
+          color="white"
+          onClick={() => user.changeName('John')}
+        >
           <Language resource="ACTIONS.CHANGE_NAME" />
         </Button>
-        <Button onClick={() => user.changeLastName('Doe')}>
+        <Button
+          radius={ui.borderRadius}
+          color="white"
+          onClick={() => user.changeLastName('Doe')}
+        >
           <Language resource="ACTIONS.CHANGE_LASTNAME" />
+        </Button>
+        <Button
+          radius={ui.borderRadius}
+          color="white"
+          onClick={() => ui.changeBorderRadius(50)}
+        >
+          CHANGE BORDER RADIUS: {ui.borderRadius}
         </Button>
       </div>
     </div>
   </div>
 );
 
-export default inject('user')(observer(User));
+export default inject('user', 'ui')(observer(User));

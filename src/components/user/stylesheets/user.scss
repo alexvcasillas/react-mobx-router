@@ -8,44 +8,37 @@
   padding: 20px;
 
   .info {
+    margin-bottom: 20px;
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     align-items: flex-start;
-    flex-flow: center;
+
+    .name, .xp{
+      width: 50%;
+      font-weight: 600;
+      margin-bottom: 5px;
+    }
 
     .name {
       align-self: flex-start;
-      width: 50%;
     }
 
     .xp {
       align-self: flex-end;
-      width: 50%;
       text-align: right;
+    }
+
+    .description{
+      width: 100%;
     }
   }
 
-  button {
-    text-transform: uppercase;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-right: 10px;
-    padding: 10px 15px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-    border-radius: 5px;
-    background-color: #A8BBE8;
-    color: #ffffff;
-    border: 0;
-    outline: none;
-    cursor: pointer;
-
-    &:hover {
-      background-color: #7793D2;
-    }
-
-    &:active {
-      background-color: #A793D2;
-    }
+  .actions{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
   }
 }

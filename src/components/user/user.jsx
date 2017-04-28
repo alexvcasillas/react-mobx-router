@@ -2,6 +2,7 @@ import React from 'react';
 import { observer, inject } from 'mobx-react';
 
 import Language from '../language/language';
+import Button from '../button/button';
 
 // Stylesheet Imports
 import './stylesheets/user.scss';
@@ -9,36 +10,33 @@ import './stylesheets/user.scss';
 const User = ({ user }) => (
   <div id="user">
     <div className="container">
-      <div className="card">
-        <div className="card-block">
-          <h4 className="card-title">
-            {user.fullName}, <small>{user.age}</small>
-          </h4>
-          <h6 className="card-subtitle mb-2 text-muted">
-            <Language resource="XP_TITLE" />: {user.xp}
-          </h6>
-          <p className="card-text">
+      <div className="info">
+        <div className="name">
+          {user.fullName}, <small>{user.age}</small>
+        </div>
+        <div className="xp">
+          <Language resource="XP_TITLE" />:
+          {` `}
+          <span style={{ color: user.xp >= 1000 ? '#FF8E53' : '#000000' }}>
+            {user.xp}
+          </span>
+        </div>
+        <div className="description">
+          <p>
             <Language resource="APP_DESCRIPTION" />
           </p>
-          <button
-            className="d-block btn btn-primary"
-            onClick={() => user.increaseXp(100)}
-          >
-            <Language resource="ACTIONS.INCREASE_XP" />
-          </button>
-          <button
-            className="d-block btn btn-secondary"
-            onClick={() => user.changeName('John')}
-          >
-            <Language resource="ACTIONS.CHANGE_NAME" />
-          </button>
-          <button
-            className="d-block btn btn-secondary"
-            onClick={() => user.changeLastName('Doe')}
-          >
-            <Language resource="ACTIONS.CHANGE_LASTNAME" />
-          </button>
         </div>
+      </div>
+      <div className="actions">
+        <Button onClick={() => user.increaseXp(100)}>
+          <Language resource="ACTIONS.INCREASE_XP" />
+        </Button>
+        <Button onClick={() => user.changeName('John')}>
+          <Language resource="ACTIONS.CHANGE_NAME" />
+        </Button>
+        <Button onClick={() => user.changeLastName('Doe')}>
+          <Language resource="ACTIONS.CHANGE_LASTNAME" />
+        </Button>
       </div>
     </div>
   </div>

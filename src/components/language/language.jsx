@@ -1,4 +1,4 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
 import { observer, inject } from 'mobx-react';
 
 const Language = ({ language, resource }) => resource.indexOf('.') !== -1

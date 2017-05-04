@@ -12,6 +12,7 @@ const RESOURCES = {
   },
   USER: {
     NAME: 'Name',
+    NO_NAME: 'No name',
     BIO: 'Bio',
     NO_BIO: 'No biography available'
   }

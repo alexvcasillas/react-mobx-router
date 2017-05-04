@@ -12,6 +12,13 @@
 
     .row{
       margin-bottom: 5px;
+      width: 100%;
+
+      &.repo-description{
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+      }
 
       &:last-child{
         margin-bottom: 0;

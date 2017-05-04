@@ -13,7 +13,7 @@ const UserCard = ({ user }) => (
       <div className="user-info">
         <div className="row user-name">
           <strong><Language resource="USER.NAME" /></strong>
-          {user.name}
+          {user.name ? user.name : <Language resource="USER.NO_NAME" />}
         </div>
         <div className="row user-bio">
           <strong><Language resource="USER.BIO" /></strong>

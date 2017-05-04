@@ -27,7 +27,8 @@ export default class GithubStore {
 
   @action('Search for user on Github')
   searchForUser = async () => {
-    if (!this.searchName) return;
+    if (!this.searchName || (this.user && this.searchName === this.user.login))
+      return;
     this.fetchingData = true;
     const [user, repos] = await Promise.all([
       this.fetchFromGithub(`/users/${this.searchName}`),
@@ -37,7 +38,6 @@ export default class GithubStore {
       this.user = user;
       this.repos = repos;
       this.fetchingData = false;
-      console.log(this.user);
     });
   };
 }

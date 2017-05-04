@@ -37,6 +37,7 @@ export default class GithubStore {
       this.user = user;
       this.repos = repos;
       this.fetchingData = false;
+      console.log(this.user);
     });
   };
 }

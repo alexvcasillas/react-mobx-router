@@ -15,6 +15,7 @@
     flex-wrap: nowrap;
     align-items: stretch;
     justify-content: center;
+    border-radius: 4px;
 
     input{
       width: 100%;
@@ -25,6 +26,7 @@
       font-family: 'Open Sans';
       font-size: 15px;
       margin-right: 10px;
+      border-radius: 4px;
 
       &:focus{
         border: 1px solid #B8B7B7;

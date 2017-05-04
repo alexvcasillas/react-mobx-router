@@ -2,11 +2,17 @@
 const RESOURCES = {
   CHANGE_SPANISH: 'Change to Spanish',
   CHANGE_ENGLISH: 'Change to English',
+  FETCHING_DATA: 'Fetching data from Github ...',
   REPO: {
     NAME: 'Name',
     CREATED_AT: 'Created At',
     FORKS: 'Forks',
     STARS: 'Stars'
+  },
+  USER: {
+    NAME: 'Name',
+    BIO: 'Bio',
+    NO_BIO: 'No biography available'
   }
 };
 

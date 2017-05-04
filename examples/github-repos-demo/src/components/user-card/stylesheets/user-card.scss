@@ -1,0 +1,36 @@
+#UserCard{
+  width: 100%;
+  padding: 20px;
+
+  > .content{
+    display: flex;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    flex-direction: row;
+    border-radius: 4px;
+    align-items: center;
+
+    img{
+      width: 100px;
+      height: 100px;
+      border-radius: 4px;
+      margin-right: 20px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    }
+
+    .row{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin-bottom: 5px;
+
+      &:last-child{
+        margin-bottom: 0;
+      }
+
+    }
+
+  }
+
+}

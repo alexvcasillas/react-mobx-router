@@ -15,7 +15,7 @@ const SearchUser = ({ github }) => (
         type="text"
         placeholder="Github username to find repositories"
       />
-      <Button radius="0" onClick={() => github.searchForUser()}>Search</Button>
+      <Button radius="4" onClick={() => github.searchForUser()}>Search</Button>
     </div>
   </div>
 );

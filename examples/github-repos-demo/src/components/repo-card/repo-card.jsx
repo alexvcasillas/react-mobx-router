@@ -11,6 +11,10 @@ const RepoCard = ({ repo }) => (
         <strong><Language resource="REPO.NAME" />: </strong>
         {repo.name}
       </div>
+      <div className="row repo-description">
+        <strong><Language resource="REPO.DESCRIPTION" />: </strong>
+        {repo.description}
+      </div>
       <div className="row repo-created">
         <strong><Language resource="REPO.CREATED_AT" />: </strong>
         {repo.created_at}

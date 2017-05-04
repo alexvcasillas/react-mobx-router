@@ -5,6 +5,7 @@ const RESOURCES = {
   FETCHING_DATA: 'Fetching data from Github ...',
   REPO: {
     NAME: 'Name',
+    DESCRIPTION: 'Description',
     CREATED_AT: 'Created At',
     FORKS: 'Forks',
     STARS: 'Stars'

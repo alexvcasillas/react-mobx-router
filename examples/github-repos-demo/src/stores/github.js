@@ -15,7 +15,7 @@ export default class GithubStore {
   }
 
   async fetchFromGithub(endpoint) {
-    const url = `https://api.github.com${endpoint}?client_id=62b5dd81cbcb92f3cdf9&client_secret=1c41dfda0d56eb31b722049aa60d91eafeb6ebcf`;
+    const url = `https://api.github.com${endpoint}?client_id=my_key&client_secret=my_secret`;
     const response = await fetch(url);
     return await response.json();
   }

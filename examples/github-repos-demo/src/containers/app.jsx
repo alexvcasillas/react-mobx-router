@@ -1,5 +1,5 @@
 import React from 'react';
-import DevTools from 'mobx-react-devtools';
+//import DevTools from 'mobx-react-devtools';
 
 import Header from '../components/header/header';
 import SearchUser from '../components/search-user/search-user';
@@ -10,7 +10,7 @@ import '../stylesheets/common.scss';
 
 const App = () => (
   <div id="app">
-    <DevTools />
+
     <Header />
     <SearchUser />
     <ReposGrid />

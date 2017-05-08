@@ -1,7 +1,6 @@
 import React from 'react';
 import { inject, observer } from 'mobx-react';
 
-import Language from '../language/language';
 import UserCard from '../user-card/user-card';
 import RepoCard from '../repo-card/repo-card';
 import LoadingCard from '../loading-card/loading-card';
@@ -11,9 +10,10 @@ import './stylesheets/repos-grid.scss';
 const ReposGrid = ({ github }) => (
   <div id="ReposGrid">
     {github.fetchingData
-      ? <LoadingCard>
-          <div className="content"><Language resource="FETCHING_DATA" /></div>
-        </LoadingCard>
+      ? <div style={{ width: '100%' }}>
+          <LoadingCard userPlaceholder><div className="content" /></LoadingCard>
+          <LoadingCard repoPlaceholder><div className="content" /></LoadingCard>
+        </div>
       : null}
     {!github.fetchingData && github.user
       ? <UserCard user={github.user} />

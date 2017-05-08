@@ -12,6 +12,9 @@ const SearchUser = ({ github }) => (
         onChange={event => {
           github.changeUserToSearchFor(event.target.value);
         }}
+        onKeyPress={event => {
+          if (event.charCode === 13) github.searchForUser();
+        }}
         type="text"
         placeholder="Github username to find repositories"
       />

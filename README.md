@@ -6,11 +6,7 @@
 
 AKA: **3RMXi** (for the sake of brevity!)
 
-❕❕ **New:** Now supports Internationalization!
-
-❕❕ **New:** i18n now supports nested language resource objects for a better structuring!
-
-This project is a personal boilerplate as a quickstart for development with [react-create-app](https://github.com/facebookincubator/create-react-app) + [react-router](https://github.com/ReactTraining/react-router) and [MobX](https://github.com/mobxjs/mobx) to maintain the state of the App.
+This project is a personal boilerplate as a quickstart for development with [react-create-app](https://github.com/facebookincubator/create-react-app) + [React Router 4](https://github.com/ReactTraining/react-router) and [MobX](https://github.com/mobxjs/mobx) to maintain the state of the App.
 
 This boilerplate implements [custom-react-scripts](https://github.com/kitze/custom-react-scripts) to be able to implement @decorators and CSS Modules for Sass/Less/Stylus implementations.
 
@@ -93,7 +89,7 @@ As you can see, we've defined for example a `CHANGE_SPANISH` key with a value of
 
 At the very last line of the file, we export this object to access it from the `Language Store`.
 
-Note that this **Keys** should be exactly the same in each of the language folders you create. If the key resource is not found
+Note that this **Keys** should be exactly the same in each of the language files you create. If the key resource is not found
 nothing will be shown (I don't want to throw exceptions and all that stuff that breaks and stops the app). If you want it, you can create a function that process the required key resource to see if it exists or it's not empty and the `Language` component.
 
 Now, to change the current App Language you only need to call (previously injected language store at the desired component) `this.props.language.changeLanguageTo('es')` from anywhere inside that component (an onClick={} method for example) and if it's a valid key the one you passed to the method it will automatically change the language, the resources and re-render the `<Language resource="CHANGE_SPANISH" />` with the new `CHANGE_SPANISH` value, in this case, will replace _'Change to Spanish'_  with _'Cambiar a Español'_. It's not that hard, see?
@@ -101,12 +97,6 @@ Now, to change the current App Language you only need to call (previously inject
 You can also see that you have the possibility to use **nested language resource objects** for a more structured language organization. To have access to this **nested language resource objects** you only need to call the language component with the following structure `<Language resource="ACTIONS.INCREASE_XP" />` for example and will render the given resource string into the component. Piece of cake!
 
 **Note:** You should look at the `<Language />` react component located at `src/components/language` to see that it's not a big deal, it just injects the `LanguageStore` and being an `@observer` so it will re-render when an `@observable` property (in this case, `language.resource[resource]`) has changed.
-
-**Pending Internationalization Tasks:**
-
-✅ Expose the current language value to check it at any point/state of the App.
-
-⬜ Automatize the language resources fetch.
 
 ---
 

@@ -3830,6 +3830,10 @@ mobx-react-devtools:
   version "4.2.11"
   resolved "https://registry.yarnpkg.com/mobx-react-devtools/-/mobx-react-devtools-4.2.11.tgz#18d89a32b7d28b48228d12ccde73cf733aacc395"
 
+mobx-state-tree@^0.5.1:
+  version "0.5.1"
+  resolved "https://registry.yarnpkg.com/mobx-state-tree/-/mobx-state-tree-0.5.1.tgz#22b9a6cf5fa50ac60fb66c5591ca5e7468791bd8"
+
 ms@0.7.1:
   version "0.7.1"
   resolved "https://registry.yarnpkg.com/ms/-/ms-0.7.1.tgz#9cd13c03adbff25b65effde7ce864ee952017098"
@@ -4706,7 +4710,7 @@ react-dom:
     loose-envify "^1.1.0"
     object-assign "^4.1.0"
 
-react-router-dom@^4.1.0:
+react-router-dom@^4.1.1:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/react-router-dom/-/react-router-dom-4.1.1.tgz#3021ade1f2c160af97cf94e25594c5f294583025"
   dependencies:

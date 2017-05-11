@@ -1,31 +1,35 @@
-import { observable, computed, action } from 'mobx';
+import { types } from 'mobx-state-tree';
 
-export default class UserStore {
-  @observable name;
-  @observable lastName;
-  @observable age;
-  @observable xp;
-
-  constructor(name, lastName, age, xp) {
-    this.name = name;
-    this.lastName = lastName;
-    this.age = age;
-    this.xp = xp;
+/**
+ * Mobx State Tree Store
+ * The store recieves 3 parameters
+ *  1st one is the Store Name
+ *  2nd is an object with the Props and Computed values
+ *  3rd is and object with the Actions
+ **/
+const UserStore = types.model(
+  'UserStore',
+  {
+    id: types.identifier(),
+    name: types.string,
+    lastName: types.string,
+    age: types.number,
+    xp: types.number,
+    get fullName() {
+      return `${this.name} ${this.lastName}`;
+    }
+  },
+  {
+    changeName(name) {
+      this.name = name;
+    },
+    changeLastname(lastName) {
+      this.lastName = lastName;
+    },
+    increaseXp(amount) {
+      this.xp += amount;
+    }
   }
+);
 
-  @action('Change Name') changeName(name){
-    this.name = name;
-  }
-
-  @action('Change Last Name') changeLastName(lastName){
-    this.lastName = lastName;
-  }
-
-  @action('Increase XP') increaseXp(amount){
-    this.xp += amount;
-  }
-
-  @computed get fullName() {
-    return `${this.name} ${this.lastName}`;
-  }
-}
+export default UserStore;

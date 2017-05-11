@@ -19,7 +19,13 @@ import UserStore from './stores/user';
 import LanguageStore from './stores/language';
 import UIStore from './stores/ui';
 // Because they're classes, we have to instantiate them here :)
-const userStore = new UserStore('Alex', 'Casillas', 26, 0);
+const userStore = UserStore.create({
+  id: '1',
+  name: 'Alex',
+  lastName: 'Casillas',
+  age: 27,
+  xp: 0
+});
 const languageStore = new LanguageStore('en');
 const uiStore = new UIStore(3, 'white');
 

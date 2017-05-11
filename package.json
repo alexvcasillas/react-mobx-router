@@ -8,11 +8,12 @@
   },
   "dependencies": {
     "mobx": "^3.1.9",
-    "mobx-react": "^4.1.7",
+    "mobx-react": "^4.1.8",
+    "mobx-state-tree": "^0.5.1",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
-    "react-router-dom": "^4.1.0",
-    "styled-components": "^1.4.5"
+    "react-router-dom": "^4.1.1",
+    "styled-components": "^1.4.6"
   },
   "scripts": {
     "start": "react-scripts start",

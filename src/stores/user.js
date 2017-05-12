@@ -23,7 +23,7 @@ const UserStore = types.model(
     changeName(name) {
       this.name = name;
     },
-    changeLastname(lastName) {
+    changeLastName(lastName) {
       this.lastName = lastName;
     },
     increaseXp(amount) {

@@ -1,20 +1,40 @@
-import { observable, action, computed } from 'mobx';
+import { types } from 'mobx-state-tree';
 
-export default class UIStore {
-  @observable borderRadius;
-  @observable textColor;
-
-  constructor(br, tc) {
-    this.borderRadius = br;
-    this.textColor = tc;
+const UIStore = types.model(
+  'UIStore',
+  {
+    borderRadius: types.number,
+    textColor: types.string
+  },
+  {
+    changeBorderRadius(value) {
+      this.borderRadius = value;
+    },
+    changeTextColor(value) {
+      this.textColor = value;
+    }
   }
+);
 
-  @action(`Changin' Border Radius`)
-  changeBorderRadius(value) {
-    this.borderRadius = value;
-  }
+export default UIStore;
 
-  @computed get computeBorderRadius() {
-    return this.borderRadius;
-  }
-}
+// import { observable, action, computed } from 'mobx';
+//
+// export default class UIStore {
+//   @observable borderRadius;
+//   @observable textColor;
+//
+//   constructor(br, tc) {
+//     this.borderRadius = br;
+//     this.textColor = tc;
+//   }
+//
+//   @action(`Changin' Border Radius`)
+//   changeBorderRadius(value) {
+//     this.borderRadius = value;
+//   }
+//
+//   @computed get computeBorderRadius() {
+//     return this.borderRadius;
+//   }
+// }

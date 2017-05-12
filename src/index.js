@@ -26,8 +26,8 @@ const userStore = UserStore.create({
   age: 27,
   xp: 0
 });
-const languageStore = new LanguageStore('en');
-const uiStore = new UIStore(3, 'white');
+const languageStore = LanguageStore.create({ language: 'en' });
+const uiStore = UIStore.create({ borderRadius: 3, textColor: 'white' });
 
 const store = {
   user: userStore,

@@ -33,21 +33,21 @@ const User = ({ user, ui }) => (
         </Button>
         <Button
           radius={ui.borderRadius}
-          color="white"
+          color={ui.textColor}
           onClick={() => user.changeName('John')}
         >
           <Language resource="ACTIONS.CHANGE_NAME" />
         </Button>
         <Button
           radius={ui.borderRadius}
-          color="white"
+          color={ui.textColor}
           onClick={() => user.changeLastName('Doe')}
         >
           <Language resource="ACTIONS.CHANGE_LASTNAME" />
         </Button>
         <Button
           radius={ui.borderRadius}
-          color="white"
+          color={ui.textColor}
           onClick={() => ui.changeBorderRadius(50)}
         >
           CHANGE BORDER RADIUS: {ui.borderRadius}

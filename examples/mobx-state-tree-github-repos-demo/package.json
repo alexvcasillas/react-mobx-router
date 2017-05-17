@@ -1,15 +1,15 @@
 {
   "name": "react-mobx-router",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "private": true,
   "devDependencies": {
     "custom-react-scripts": "0.0.23",
-    "mobx-react-devtools": "^4.2.11"
+    "mobx-react-devtools": "^4.2.13"
   },
   "dependencies": {
     "mobx": "^3.1.9",
     "mobx-react": "^4.1.8",
-    "mobx-state-tree": "^0.5.1",
+    "mobx-state-tree": "^0.6.1",
     "node-fetch": "^1.6.3",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",

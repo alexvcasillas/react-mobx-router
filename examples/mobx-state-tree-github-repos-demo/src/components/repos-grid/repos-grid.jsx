@@ -15,7 +15,7 @@ const ReposGrid = ({ github }) => (
           <LoadingCard repoPlaceholder><div className="content" /></LoadingCard>
         </div>
       : null}
-    {!github.fetchingData && github.user
+    {!github.fetchingData && !Object.is(github.user, null)
       ? <UserCard user={github.user} />
       : null}
     {!github.fetchingData &&

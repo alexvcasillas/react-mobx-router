@@ -29,8 +29,7 @@ const userStore = UserStore.create({
 });
 const languageStore = LanguageStore.create({ language: 'en' });
 const uiStore = UIStore.create({ borderRadius: 3, textColor: 'white' });
-const githubStore = new GithubStore();
-
+const githubStore = GithubStore.create();
 const store = {
   user: userStore,
   language: languageStore,

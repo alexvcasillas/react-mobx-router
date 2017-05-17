@@ -8,7 +8,7 @@ const UserCard = ({ user }) => (
   <div id="UserCard">
     <div className="content">
       <div className="user-avatar">
-        <img src={user.avatar_url} role="presentation" />
+        <img src={user.avatar} role="presentation" />
       </div>
       <div className="user-info">
         <div className="row user-name">

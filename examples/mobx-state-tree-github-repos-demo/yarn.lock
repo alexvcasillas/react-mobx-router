@@ -3830,9 +3830,9 @@ mobx-react-devtools:
   version "4.2.11"
   resolved "https://registry.yarnpkg.com/mobx-react-devtools/-/mobx-react-devtools-4.2.11.tgz#18d89a32b7d28b48228d12ccde73cf733aacc395"
 
-mobx-state-tree@^0.5.1:
-  version "0.5.1"
-  resolved "https://registry.yarnpkg.com/mobx-state-tree/-/mobx-state-tree-0.5.1.tgz#22b9a6cf5fa50ac60fb66c5591ca5e7468791bd8"
+mobx-state-tree@^0.6.1:
+  version "0.6.1"
+  resolved "https://registry.yarnpkg.com/mobx-state-tree/-/mobx-state-tree-0.6.1.tgz#cbdf3f1e664e7e168df6f9411d8ac2278514bfbb"
 
 ms@0.7.1:
   version "0.7.1"

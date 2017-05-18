@@ -31,6 +31,12 @@
       margin-bottom: 5px;
       width: 100%;
 
+      &.repo-name{
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+      }
+
       &.repo-description{
         text-overflow: ellipsis;
         white-space: nowrap;

@@ -11,8 +11,8 @@ const ReposGrid = ({ github }) => (
   <div id="ReposGrid">
     {github.fetchingData
       ? <div style={{ width: '100%' }}>
-          <LoadingCard userPlaceholder><div className="content" /></LoadingCard>
-          <LoadingCard repoPlaceholder><div className="content" /></LoadingCard>
+          <LoadingCard userCard />
+          <LoadingCard />
         </div>
       : null}
     {!github.fetchingData && !Object.is(github.user, null)

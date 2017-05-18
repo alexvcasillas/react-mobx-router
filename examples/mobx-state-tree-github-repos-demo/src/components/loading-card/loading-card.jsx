@@ -1,49 +1,27 @@
-import styled from 'styled-components';
+import React from 'react';
 
-import UserPlaceholder from './loading-user-bg.jpg';
-import RepoPlaceholder from './loading-repo-bg.jpg';
+import './stylesheets/loading-card.scss';
 
-const LoadingCard = styled.div`
-  width: ${props => (props.userPlaceholder ? '100%' : '33.33%')};
-  padding: 20px;
-
-  @media (max-width: 375px){
-    width: 100%;
-  }
-
-  @media (max-width: 667px){
-    width: 100%;
-  }
-
-  > .content{
-    display: flex;
-    background-image: ${props => (props.userPlaceholder ? `url(${UserPlaceholder})` : `url(${RepoPlaceholder})`)};
-    background-position: ${props => (props.userPlaceholder ? `left center` : `url(${RepoPlaceholder})`)};
-    background-repeat: no-repeat;
-    background-size: contains;
-    min-height: ${props => (props.userPlaceholder ? `200px` : `250px`)};
-    background-color: #ffffff;
-    box-shadow: 0 0 20px rgba(0,0,0,0.1);
-    flex-direction: column;
-
-    @media (max-width: 375px){
-      border-radius: 0;
-    }
-
-    @media (max-width: 667px){
-      border-radius: 0;
-    }
-
-    .row{
-      margin-bottom: 5px;
-
-      &:last-child{
-        margin-bottom: 0;
-      }
-
-    }
-
-  }
-`;
+const LoadingCard = ({ userCard }) => (
+  <div className={userCard ? 'user-load-card' : 'repo-load-card'}>
+    {userCard
+      ? <div className="content">
+          <div className="user-avatar" />
+          <div className="user-info">
+            <div className="row title" />
+            <div className="row user-name" />
+            <div className="row title" />
+            <div className="row user-bio" />
+          </div>
+        </div>
+      : <div className="content">
+          <div className="row repo-name" />
+          <div className="row repo-description" />
+          <div className="row repo-created" />
+          <div className="row repo-forks" />
+          <div className="row repo-stars" />
+        </div>}
+  </div>
+);
 
 export default LoadingCard;

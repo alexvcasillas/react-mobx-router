@@ -25,7 +25,7 @@ const GithubStore = types.model(
     },
     fetchFromGithub(endpoint) {
       return new Promise((resolve, reject) => {
-        const url = `https://api.github.com${endpoint}?client_id=62b5dd81cbcb92f3cdf9&client_secret=1c41dfda0d56eb31b722049aa60d91eafeb6ebcf`;
+        const url = `https://api.github.com${endpoint}?client_id=my_client_id&client_secret=my_client_secret`;
         fetch(url).then(response => {
           response.json().then(result => {
             resolve(result);

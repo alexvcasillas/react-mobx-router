@@ -15,7 +15,8 @@ const RESOURCES = {
     NO_NAME: 'Sin nombre',
     BIO: 'Bio',
     NO_BIO: 'No dispone de biografía'
-  }
+  },
+  WITH_LOVE: 'Desarrollado con ❤️ por '
 };
 
 export default RESOURCES;

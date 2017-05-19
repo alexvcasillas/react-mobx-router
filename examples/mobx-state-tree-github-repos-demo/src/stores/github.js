@@ -1,6 +1,9 @@
 import fetch from "node-fetch";
 import { types } from "mobx-state-tree";
 
+const GithubClientId = "my_client_id";
+const GithubSecretId = "my_secret_id";
+
 const UserModel = types.model(
   "UserModel",
   {
@@ -25,7 +28,7 @@ const GithubStore = types.model(
     },
     fetchFromGithub(endpoint) {
       return new Promise((resolve, reject) => {
-        const url = `https://api.github.com${endpoint}?client_id=my_client_id&client_secret=my_client_secret`;
+        const url = `https://api.github.com${endpoint}?client_id=${GithubClientId}&client_secret=${GithubSecretId}`;
         fetch(url).then(response => {
           response.json().then(result => {
             resolve(result);

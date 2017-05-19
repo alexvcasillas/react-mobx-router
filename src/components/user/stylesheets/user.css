@@ -1,0 +1,31 @@
+#user {
+  width: 600px;
+  margin: 0 auto;
+  max-width: 80%;
+  margin-top: 80px;
+  background-color: #ffffff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 20px; }
+  #user .info {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start; }
+    #user .info .name, #user .info .xp {
+      width: 50%;
+      font-weight: 600;
+      margin-bottom: 5px; }
+    #user .info .name {
+      align-self: flex-start; }
+    #user .info .xp {
+      align-self: flex-end;
+      text-align: right; }
+    #user .info .description {
+      width: 100%; }
+  #user .actions {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center; }

@@ -1,11 +1,11 @@
-import React from 'react';
-import { observer, inject } from 'mobx-react';
+import React from "react";
+import { observer, inject } from "mobx-react";
 
-import Language from '../language/language';
-import Button from '../button/button';
+import Language from "../language/language";
+import Button from "../button/button";
 
 // Stylesheet Imports
-import './stylesheets/user.scss';
+import "./stylesheets/user.css";
 
 const User = ({ user, ui }) => (
   <div id="user">
@@ -17,7 +17,7 @@ const User = ({ user, ui }) => (
         <div className="xp">
           <Language resource="XP_TITLE" />:
           {` `}
-          <span style={{ color: user.xp >= 1000 ? '#FF8E53' : '#000000' }}>
+          <span style={{ color: user.xp >= 1000 ? "#FF8E53" : "#000000" }}>
             {user.xp}
           </span>
         </div>
@@ -34,14 +34,14 @@ const User = ({ user, ui }) => (
         <Button
           radius={ui.borderRadius}
           color={ui.textColor}
-          onClick={() => user.changeName('John')}
+          onClick={() => user.changeName("John")}
         >
           <Language resource="ACTIONS.CHANGE_NAME" />
         </Button>
         <Button
           radius={ui.borderRadius}
           color={ui.textColor}
-          onClick={() => user.changeLastName('Doe')}
+          onClick={() => user.changeLastName("Doe")}
         >
           <Language resource="ACTIONS.CHANGE_LASTNAME" />
         </Button>
@@ -57,4 +57,4 @@ const User = ({ user, ui }) => (
   </div>
 );
 
-export default inject('user', 'ui')(observer(User));
+export default inject("user", "ui")(observer(User));

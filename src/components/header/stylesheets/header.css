@@ -1,0 +1,13 @@
+#Header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #ffffff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); }
+  #Header .element {
+    padding: 20px;
+    cursor: pointer; }
+    #Header .element.current {
+      color: #FF8E53; }

@@ -3,23 +3,29 @@
   "version": "0.2.0",
   "private": true,
   "devDependencies": {
-    "custom-react-scripts": "0.0.23",
-    "mobx-react-devtools": "^4.2.13"
+    "mobx-react-devtools": "4.2.13",
+    "node-sass-chokidar": "0.0.1",
+    "npm-run-all": "4.0.2",
+    "react-scripts": "1.0.0"
   },
   "dependencies": {
-    "mobx": "^3.1.9",
-    "mobx-react": "^4.1.8",
-    "mobx-state-tree": "^0.6.1",
-    "node-fetch": "^1.6.3",
-    "react": "^15.5.4",
-    "react-dom": "^15.5.4",
-    "react-router-dom": "^4.1.1",
-    "styled-components": "^1.4.6"
+    "mobx": "3.1.9",
+    "mobx-react": "4.1.8",
+    "mobx-state-tree": "0.6.2",
+    "node-fetch": "1.6.3",
+    "react": "15.5.4",
+    "react-dom": "15.5.4",
+    "react-router-dom": "4.1.1",
+    "styled-components": "1.4.6"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start-js": "react-scripts start",
+    "start": "npm-run-all -p watch-css start-js",
+    "build": "npm run build-css && react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "eslint src",
+    "build-css": "node-sass-chokidar src/ -o src/",
+    "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive"
   }
 }

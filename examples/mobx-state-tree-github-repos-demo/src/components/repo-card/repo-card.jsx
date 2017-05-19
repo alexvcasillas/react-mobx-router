@@ -1,8 +1,8 @@
-import React from 'react';
+import React from "react";
 
-import Language from '../language/language';
+import Language from "../language/language";
 
-import './stylesheets/repo-card.scss';
+import "./stylesheets/repo-card.css";
 
 const RepoCard = ({ repo }) => (
   <div className="repo-card">

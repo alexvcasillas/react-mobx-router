@@ -1,0 +1,36 @@
+.repo-card {
+  width: 33.33%;
+  max-width: 100%;
+  padding: 20px; }
+  @media (max-width: 375px) {
+    .repo-card {
+      width: 100%; } }
+  @media (max-width: 667px) {
+    .repo-card {
+      width: 100%; } }
+  .repo-card > .content {
+    display: flex;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    border-radius: 4px; }
+    @media (max-width: 375px) {
+      .repo-card > .content {
+        border-radius: 0; } }
+    @media (max-width: 667px) {
+      .repo-card > .content {
+        border-radius: 0; } }
+    .repo-card > .content .row {
+      margin-bottom: 5px;
+      width: 100%; }
+      .repo-card > .content .row.repo-name {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden; }
+      .repo-card > .content .row.repo-description {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden; }
+      .repo-card > .content .row:last-child {
+        margin-bottom: 0; }

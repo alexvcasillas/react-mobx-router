@@ -88,8 +88,8 @@ video {
   border: 0;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline;
-}
+  vertical-align: baseline; }
+
 /* HTML5 display-role reset for older browsers */
 article,
 aside,
@@ -102,45 +102,37 @@ hgroup,
 menu,
 nav,
 section {
-  display: block;
-}
+  display: block; }
 
 body {
-  line-height: 1;
-}
+  line-height: 1; }
 
 ol,
 ul {
-  list-style: none;
-}
+  list-style: none; }
 
 blockquote,
 q {
-  quotes: none;
-}
+  quotes: none; }
 
 blockquote:after,
 blockquote:before,
 q:after,
 q:before {
   content: '';
-  content: none;
-}
+  content: none; }
 
 table {
   border-collapse: collapse;
-  border-spacing: 0;
-}
+  border-spacing: 0; }
 
 .pointer {
-  cursor: pointer;
-}
+  cursor: pointer; }
 
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 body {
   background-color: #f4f2f2;
@@ -148,9 +140,7 @@ body {
   font-size: 15px;
   line-height: 1.4;
   color: #101113;
-  overflow-y: scroll;
-}
+  overflow-y: scroll; }
 
-strong{
-  font-weight: 600;
-}
+strong {
+  font-weight: 600; }

@@ -1,9 +1,9 @@
-import React from 'react';
-import { inject, observer } from 'mobx-react';
+import React from "react";
+import { inject, observer } from "mobx-react";
 
-import Button from '../button/button';
+import Button from "../button/button";
 
-import './stylesheets/search-user.scss';
+import "./stylesheets/search-user.css";
 
 const SearchUser = ({ github }) => (
   <div id="SearchUser">
@@ -25,4 +25,4 @@ const SearchUser = ({ github }) => (
   </div>
 );
 
-export default inject('github')(observer(SearchUser));
+export default inject("github")(observer(SearchUser));

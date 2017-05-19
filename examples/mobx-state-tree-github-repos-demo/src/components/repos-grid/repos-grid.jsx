@@ -1,16 +1,16 @@
-import React from 'react';
-import { inject, observer } from 'mobx-react';
+import React from "react";
+import { inject, observer } from "mobx-react";
 
-import UserCard from '../user-card/user-card';
-import RepoCard from '../repo-card/repo-card';
-import LoadingCard from '../loading-card/loading-card';
+import UserCard from "../user-card/user-card";
+import RepoCard from "../repo-card/repo-card";
+import LoadingCard from "../loading-card/loading-card";
 
-import './stylesheets/repos-grid.scss';
+import "./stylesheets/repos-grid.css";
 
 const ReposGrid = ({ github }) => (
   <div id="ReposGrid">
     {github.fetchingData
-      ? <div style={{ width: '100%' }}>
+      ? <div style={{ width: "100%" }}>
           <LoadingCard userCard />
           <LoadingCard />
         </div>
@@ -24,4 +24,4 @@ const ReposGrid = ({ github }) => (
   </div>
 );
 
-export default inject('github')(observer(ReposGrid));
+export default inject("github")(observer(ReposGrid));

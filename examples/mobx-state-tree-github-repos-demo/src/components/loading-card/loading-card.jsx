@@ -1,9 +1,9 @@
-import React from 'react';
+import React from "react";
 
-import './stylesheets/loading-card.scss';
+import "./stylesheets/loading-card.css";
 
 const LoadingCard = ({ userCard }) => (
-  <div className={userCard ? 'user-load-card' : 'repo-load-card'}>
+  <div className={userCard ? "user-load-card" : "repo-load-card"}>
     {userCard
       ? <div className="content">
           <div className="user-avatar" />

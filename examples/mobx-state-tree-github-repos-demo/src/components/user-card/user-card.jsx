@@ -1,8 +1,8 @@
-import React from 'react';
+import React from "react";
 
-import Language from '../language/language';
+import Language from "../language/language";
 
-import './stylesheets/user-card.scss';
+import "./stylesheets/user-card.css";
 
 const UserCard = ({ user }) => (
   <div id="UserCard">

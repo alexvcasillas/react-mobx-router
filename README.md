@@ -1,12 +1,10 @@
-# react-mobx-router
+# 3RMXi
 
 ![3RMXi Logotype](https://raw.githubusercontent.com/alexvcasillas/react-mobx-router/master/3RMXi.jpg)
 
 ### React Create App with React Router and MobX and Internationalization
 
-AKA: **3RMXi** (for the sake of brevity!)
-
-This project is a personal boilerplate as a quickstart for development with [react-create-app](https://github.com/facebookincubator/create-react-app) + [React Router 4](https://github.com/ReactTraining/react-router) and [MobX](https://github.com/mobxjs/mobx) to maintain the state of the App.
+This project is a boilerplate for a quickstart development with [react-create-app](https://github.com/facebookincubator/create-react-app) + [React Router 4](https://github.com/ReactTraining/react-router) and [MobX](https://github.com/mobxjs/mobx) to maintain the state of the App.
 
 This boilerplate implements [custom-react-scripts](https://github.com/kitze/custom-react-scripts) to be able to implement @decorators and CSS Modules for Sass/Less/Stylus implementations.
 

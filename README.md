@@ -10,6 +10,12 @@ This boilerplate implements [custom-react-scripts](https://github.com/kitze/cust
 
 I'm not interested in creating an opinionated boilerplate with strict rules about how to do stuff. The beauty of Javascript is that, you can do it as you want, the way you feel more confortable with so, **you should** modify the project structure as you want while it's easier for you to work with, also changing any other aspect of the execution.
 
+### Built with 3RMXi
+
+The following proyects are built with **3RMXi**, some of them are big, some of them are examples:
+
+[Asynchronous Fetching from Github](https://react-git-app.firebaseapp.com/)
+
 ### Getting Started
 
 To get started using this boilerplate you only need to follow a few steps. First of all

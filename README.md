@@ -2,11 +2,11 @@
 
 ![3RMXi Logotype](https://raw.githubusercontent.com/alexvcasillas/react-mobx-router/master/3RMXi.jpg)
 
-### React Create App with React Router and MobX and Internationalization
+### Create React App with React Router 4 and MobX State Tree and Internationalization
 
-This project is a boilerplate for a quickstart development with [react-create-app](https://github.com/facebookincubator/create-react-app) + [React Router 4](https://github.com/ReactTraining/react-router) and [MobX](https://github.com/mobxjs/mobx) to maintain the state of the App.
+This project is a boilerplate for a quickstart development with [create-react-app](https://github.com/facebookincubator/create-react-app) + [React Router 4](https://github.com/ReactTraining/react-router) and [MobX](https://github.com/mobxjs/mobx) to maintain the state of the App.
 
-This boilerplate implements [custom-react-scripts](https://github.com/kitze/custom-react-scripts) to be able to implement @decorators and CSS Modules for Sass/Less/Stylus implementations.
+This boilerplate doest not implement [custom-react-scripts](https://github.com/kitze/custom-react-scripts) anymore but if you want to to be able to implement @decorators and CSS Modules for Sass/Less/Stylus implementations check that repository to learn how to implement it. Or just check the "official way" of implementing this with [Create React App with CSS Modules](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md#adding-a-css-preprocessor-sass-less-etc) at the [create-react-app](https://github.com/facebookincubator/create-react-app) repository.
 
 I'm not interested in creating an opinionated boilerplate with strict rules about how to do stuff. The beauty of Javascript is that, you can do it as you want, the way you feel more confortable with so, **you should** modify the project structure as you want while it's easier for you to work with, also changing any other aspect of the execution.
 

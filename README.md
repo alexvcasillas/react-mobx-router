@@ -16,6 +16,15 @@ The following proyects are built with **3RMXi**, some of them are big, some of t
 
 [Asynchronous Fetching from Github](https://react-git-app.firebaseapp.com/)
 
+### What does 3RMXi includes?
+
+* [x] Create React App - *React Apps with no build configuration.*
+* [x] MobX - *Simple, scalable state management.*
+* [x] Mobx State Tree - *Opinionated, transactional, MobX powered state container.*
+* [x] Styled Components - *Visual primitives for the component age.*
+* [x] CSS Modules - *Use SASS/SCSS/Less/Stylus/etc without ejecting.*
+
+
 ### Getting Started
 
 To get started using this boilerplate you only need to follow a few steps. First of all

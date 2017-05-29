@@ -1,12 +1,12 @@
 {
   "name": "react-mobx-router",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "private": true,
   "devDependencies": {
     "mobx-react-devtools": "4.2.13",
     "node-sass-chokidar": "0.0.1",
     "npm-run-all": "4.0.2",
-    "react-scripts": "1.0.0"
+    "react-scripts": "1.0.7"
   },
   "dependencies": {
     "mobx": "3.1.9",

@@ -10,7 +10,6 @@ import "../stylesheets/common.css";
 
 const App = () => (
   <div id="app">
-
     <Header />
     <SearchUser />
     <ReposGrid />

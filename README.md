@@ -4,7 +4,7 @@
 
 ### Create React App with React Router 4 and MobX State Tree and Internationalization
 
-This project is a boilerplate for a quickstart development with [create-react-app](https://github.com/facebookincubator/create-react-app) + [React Router 4](https://github.com/ReactTraining/react-router) and [MobX](https://github.com/mobxjs/mobx) to maintain the state of the App.
+This project is a boilerplate for a quickstart development with [create-react-app](https://github.com/facebookincubator/create-react-app) + [React Router 4](https://github.com/ReactTraining/react-router) and [MobX / MobX-State-Tree](https://github.com/mobxjs/mobx-state-tree) to maintain the state of the App and a custom internationalization module component.
 
 This boilerplate doest not implement [custom-react-scripts](https://github.com/kitze/custom-react-scripts) anymore but if you want to to be able to implement @decorators and CSS Modules for Sass/Less/Stylus implementations check that repository to learn how to implement it. Or just check the "official way" of implementing this with [Create React App with CSS Modules](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md#adding-a-css-preprocessor-sass-less-etc) at the [create-react-app](https://github.com/facebookincubator/create-react-app) repository.
 

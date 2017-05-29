@@ -56,13 +56,13 @@ import enUS from '../language/i18n/en';
 Well, technically will be this:
 
 ```
-import { observable, computed, action, reaction } from 'mobx';
+import { types } from 'mobx-state-tree';
 
 import esES from '../language/i18n/es';
 import enUS from '../language/i18n/en';
 ```
 
-But we will skip the first line for the sake of brevity because it's just MobX imports 😀
+But we will skip the first line for the sake of brevity because it's just MobX-State-Tree imports :)
 
 Now let's take a look where this things come from. This language files will contain a single javascript object with
 a `key/value` structure so we can easily access the _language resource_ that we need.

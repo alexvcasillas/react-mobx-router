@@ -4,19 +4,19 @@
   "private": true,
   "devDependencies": {
     "mobx-react-devtools": "4.2.13",
-    "node-sass-chokidar": "0.0.1",
+    "node-sass-chokidar": "0.0.2",
     "npm-run-all": "4.0.2",
     "react-scripts": "1.0.7"
   },
   "dependencies": {
-    "mobx": "3.1.9",
-    "mobx-react": "4.1.8",
+    "mobx": "3.1.10",
+    "mobx-react": "4.2.1",
     "mobx-state-tree": "0.6.2",
-    "node-fetch": "1.6.3",
+    "node-fetch": "1.7.0",
     "react": "15.5.4",
     "react-dom": "15.5.4",
     "react-router-dom": "4.1.1",
-    "styled-components": "1.4.6"
+    "styled-components": "2.0.0"
   },
   "scripts": {
     "start-js": "react-scripts start",

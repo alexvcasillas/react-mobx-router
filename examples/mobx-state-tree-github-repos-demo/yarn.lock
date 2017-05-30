@@ -4205,9 +4205,9 @@ node-pre-gyp@^0.6.29:
     tar "~2.2.1"
     tar-pack "~3.3.0"
 
-node-sass-chokidar@0.0.1:
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/node-sass-chokidar/-/node-sass-chokidar-0.0.1.tgz#145fb6bcebfdf52114eda154ed17387bf535d4c5"
+node-sass-chokidar@0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/node-sass-chokidar/-/node-sass-chokidar-0.0.2.tgz#f3c9520462f41a2a42f705d549508a8a5c9d98d1"
   dependencies:
     async-foreach "^0.1.3"
     chokidar "^1.6.1"

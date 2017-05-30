@@ -1,14 +1,14 @@
-import React from "react";
+import React from 'react';
 
-import Language from "../language/language";
+import Language from '../language/language';
 
-import "./stylesheets/user-card.css";
+import './stylesheets/user-card.css';
 
 const UserCard = ({ user }) => (
   <div id="UserCard">
     <div className="content">
       <div className="user-avatar">
-        <img src={user.avatar} role="presentation" />
+        <img src={user.avatar} alt={user.name ? user.name : 'No name'} />
       </div>
       <div className="user-info">
         <div className="row user-name">

@@ -1,11 +1,11 @@
-import fetch from "node-fetch";
-import { types } from "mobx-state-tree";
+import fetch from 'node-fetch';
+import { types } from 'mobx-state-tree';
 
-const GithubClientId = "my_client_id";
-const GithubSecretId = "my_secret_id";
+const GithubClientId = 'my_client_id';
+const GithubSecretId = 'my_secret_id';
 
 const UserModel = types.model(
-  "UserModel",
+  'UserModel',
   {
     name: types.maybe(types.string),
     bio: types.maybe(types.string),
@@ -15,9 +15,9 @@ const UserModel = types.model(
 );
 
 const GithubStore = types.model(
-  "GithubStore",
+  'GithubStore',
   {
-    searchName: types.optional(types.string, ""),
+    searchName: types.optional(types.string, ''),
     user: types.optional(types.maybe(UserModel), null), // Object with all the user data that comes from the Github API Fetch
     repos: types.optional(types.array(types.frozen), []), // Array of Repositories that comes from the Github API Fetch
     fetchingData: types.optional(types.boolean, false)

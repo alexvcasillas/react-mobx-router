@@ -1,4 +1,4 @@
-# 3RMXi
+![3RMXi New Logotype](https://github.com/alexvcasillas/react-mobx-router/blob/master/3RMXi-New.png?raw=true)
 
 ![3RMXi Logotype](https://raw.githubusercontent.com/alexvcasillas/react-mobx-router/master/3RMXi.jpg)
 

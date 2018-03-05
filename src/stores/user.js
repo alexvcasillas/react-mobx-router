@@ -7,29 +7,30 @@ import { types } from 'mobx-state-tree';
  *  2nd is an object with the Props and Computed values
  *  3rd is and object with the Actions
  **/
-const UserStore = types.model(
-  'UserStore',
-  {
+
+const UserStore = types
+  .model('UserStore', {
     id: types.identifier(),
     name: types.string,
     lastName: types.string,
     age: types.number,
-    xp: types.number,
+    xp: types.number
+  })
+  .views(self => ({
     get fullName() {
-      return `${this.name} ${this.lastName}`;
+      return `${self.name} ${self.lastName}`;
     }
-  },
-  {
+  }))
+  .actions(self => ({
     changeName(name) {
-      this.name = name;
+      self.name = name;
     },
     changeLastName(lastName) {
-      this.lastName = lastName;
+      self.lastName = lastName;
     },
     increaseXp(amount) {
-      this.xp += amount;
+      self.xp += amount;
     }
-  }
-);
+  }));
 
 export default UserStore;

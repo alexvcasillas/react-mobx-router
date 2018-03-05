@@ -3,15 +3,16 @@ import { types } from 'mobx-state-tree';
 import esES from '../language/i18n/es';
 import enUS from '../language/i18n/en';
 
-const LanguageStore = types.model(
-  'LanguageStore',
-  {
-    language: types.string,
+const LanguageStore = types
+  .model('LanguageStore', {
+    language: types.string
+  })
+  .views(self => ({
     get currentLanguage() {
-      return this.language;
+      return self.language;
     },
     get resource() {
-      switch (this.language) {
+      switch (self.language) {
         case 'en':
           return enUS;
         case 'es':
@@ -20,12 +21,11 @@ const LanguageStore = types.model(
           return enUS;
       }
     }
-  },
-  {
+  }))
+  .actions(self => ({
     changeLanguageTo(language) {
-      this.language = language;
+      self.language = language;
     }
-  }
-);
+  }));
 
 export default LanguageStore;

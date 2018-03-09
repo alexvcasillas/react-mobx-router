@@ -16,7 +16,7 @@ I'm not interested in creating an opinionated boilerplate with strict rules abou
 
 ### Built with 3RMXi
 
-The following proyects are built with **3RMXi**, some of them are big, some of them are examples:
+The following projects are built with **3RMXi**, some of them are big, some of them are examples:
 
 [Asynchronous Fetching from Github](https://react-git-app.firebaseapp.com/)
 

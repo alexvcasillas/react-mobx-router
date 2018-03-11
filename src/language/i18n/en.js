@@ -2,6 +2,7 @@
 const RESOURCES = {
   CHANGE_SPANISH: 'Change to Spanish',
   CHANGE_ENGLISH: 'Change to English',
+  CHANGE_KOREAN: 'Change to Korean',
   USER_TITLE: 'User',
   XP_TITLE: 'Experience',
   AGE_TITLE: 'Age',

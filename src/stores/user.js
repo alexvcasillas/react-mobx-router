@@ -10,7 +10,7 @@ import { types } from 'mobx-state-tree';
 
 const UserStore = types
   .model('UserStore', {
-    id: types.identifier(),
+    id: types.identifier,
     name: types.string,
     lastName: types.string,
     age: types.number,
